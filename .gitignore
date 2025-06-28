@@ -5,7 +5,7 @@ ex02/
 **/testes/
 
 # Ignore todos os criterios de notas em cadas subpasta
-**/criterio_nota.txt
+**/criterio_notas.txt
 
 # Ignore os arquivos .exe
 *.exe
