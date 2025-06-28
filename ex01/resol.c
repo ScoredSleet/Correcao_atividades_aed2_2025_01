@@ -73,6 +73,28 @@ Funcionario **lerFuncionarios(char *arq, int *tamanhoArray){
     return ArrayFuncionario;
 }
 
+int compararFuncionarioSalario(Funcionario *f1, Funcionario *f2){
+    if(f1->salario > f2->salario)
+        return 1;
+    else if(f1->salario < f2->salario)
+        return -1;
+    else
+        return 0;
+}
+
+int compararFuncionarioIdadeDec(Funcionario *f1, Funcionario *f2){
+    if(f1->idade > f2->idade)
+        return -1;
+    else if(f1->idade < f2->idade)
+        return 1;
+    else
+        return 0;
+}
+
+int compararFuncionarioNome(Funcionario *f1, Funcionario *f2){
+    return strcmp(f1->nome, f2->nome);
+}
+
 void printFuncionarios(Funcionario **ArrayFuncionario, int n){
     if (ArrayFuncionario == NULL || n <= 0) {
         printf("Nenhum funcionario para exibir.\n");
@@ -98,12 +120,12 @@ void printFuncionarios(Funcionario **ArrayFuncionario, int n){
 
 //==================== Algoritmo do Bubble Sort ====================//
 
-void bubbleSort_decrescente_idade(Funcionario **ArrayFuncionario, int n){
+void bubbleSort(Funcionario **ArrayFuncionario, int n, int (*comparar)(Funcionario*, Funcionario*)){
 
     Funcionario* temp;
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n - 1 - i; j++){
-            if(ArrayFuncionario[j]->idade <= ArrayFuncionario[j + 1]->idade){
+            if(comparar(ArrayFuncionario[j], ArrayFuncionario[j + 1]) > 0){
                 temp = ArrayFuncionario[j];
                 ArrayFuncionario[j]     = ArrayFuncionario[j + 1];
                 ArrayFuncionario[j + 1] = temp;
@@ -112,38 +134,13 @@ void bubbleSort_decrescente_idade(Funcionario **ArrayFuncionario, int n){
     }
 }
 
-void bubbleSort_crescente_salario(Funcionario **ArrayFuncionario, int n){
 
-    Funcionario *temp;
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n - 1 - i; j++){
-            if(ArrayFuncionario[j]->salario > ArrayFuncionario[j + 1]->salario){
-                temp = ArrayFuncionario[j];
-                ArrayFuncionario[j]     = ArrayFuncionario[j + 1];
-                ArrayFuncionario[j + 1] = temp;
-            }
-        }
-    }
-}
-
-void bubbleSort_crescente_nome(Funcionario **ArrayFuncionario, int n){
-    Funcionario *temp;
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n - 1 - i; j++){
-            if(strcmp(ArrayFuncionario[j]->nome, ArrayFuncionario[j + 1]->nome) == 1){
-                temp = ArrayFuncionario[j];
-                ArrayFuncionario[j]     = ArrayFuncionario[j + 1];
-                ArrayFuncionario[j + 1] = temp;
-            }
-        }
-    }
-}
 
 //======================================================================//
 
 //==================== Algoritmo do Selection Sort ====================//
 
-void selectionSort_decrescente_idade(Funcionario **ArrayFuncionario, int n){
+void selectionSort(Funcionario **ArrayFuncionario, int n, int (*comparar)(Funcionario*, Funcionario*)){
     Funcionario *temp;
     int flag, menor;
     for(int i = 0; i < n - 1; i++){
@@ -151,7 +148,7 @@ void selectionSort_decrescente_idade(Funcionario **ArrayFuncionario, int n){
         menor = i;
 
         for(int j = i + 1; j < n; j++){
-            if(ArrayFuncionario[j]->idade > ArrayFuncionario[menor]->idade){
+            if(comparar(ArrayFuncionario[j], ArrayFuncionario[menor]) < 0){
                 flag = 1;
                 menor = j;
             }
@@ -164,47 +161,6 @@ void selectionSort_decrescente_idade(Funcionario **ArrayFuncionario, int n){
     }
 }
 
-void selectionSort_crescente_salario(Funcionario **ArrayFuncionario, int n){
-    Funcionario *temp; 
-    int flag, menor;
-    for(int i = 0; i < n - 1; i++){
-        flag = 0;
-        menor = i;
-
-        for(int j = i + 1; j < n; j++){
-            if(ArrayFuncionario[j]->salario < ArrayFuncionario[menor]->salario){
-                flag = 1;
-                menor = j;
-            }
-        }
-        if(flag == 1){
-            temp                    = ArrayFuncionario[i];
-            ArrayFuncionario[i]     = ArrayFuncionario[menor];
-            ArrayFuncionario[menor] = temp;
-        }  
-    }
-}
-
-void selectionSort_crescente_nome(Funcionario **ArrayFuncionario, int n){
-    Funcionario *temp; 
-    int flag, menor;
-    for(int i = 0; i < n - 1; i++){
-        flag = 0;
-        menor = i;
-
-        for(int j = i + 1; j < n; j++){
-            if(strcmp(ArrayFuncionario[j]->nome, ArrayFuncionario[menor]->nome) == -1){
-                flag = 1;
-                menor = j;
-            }
-        }
-        if(flag == 1){
-            temp                    = ArrayFuncionario[i];
-            ArrayFuncionario[i]     = ArrayFuncionario[menor];
-            ArrayFuncionario[menor] = temp;
-        }  
-    }
-}
 
 //======================================================================//
 
@@ -213,7 +169,7 @@ void selectionSort_crescente_nome(Funcionario **ArrayFuncionario, int n){
 void printMenu() {
     printf("\n==================== MENU DE FUNCIONARIOS ====================\n");
     printf("Escolha uma opcao para listar os funcionarios:\n");
-    printf("1) Vetores de entrada com números inteiros ordenados (5.000, 10.000 e 20.000)\n");
+    printf("1) Listar em ordem decrescente de idade | Bubble Sort\n");
     printf("2) Listar em ordem crescente de salario | Bubble Sort\n");
     printf("3) Listar em ordem alfabetica (nome)    | Bubble Sort\n");
     printf("4) Listar em ordem decrescente de idade | Selection Sort\n");
@@ -237,27 +193,27 @@ int main() {
 
         switch(escolha) {
             case 1:
-                bubbleSort_decrescente_idade(ArrayFuncionario, n);
+                bubbleSort(ArrayFuncionario, n, compararFuncionarioIdadeDec);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 2:
-                bubbleSort_crescente_salario(ArrayFuncionario, n);
+                bubbleSort(ArrayFuncionario, n, compararFuncionarioSalario);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 3:
-                bubbleSort_crescente_nome(ArrayFuncionario, n);
+                bubbleSort(ArrayFuncionario, n, compararFuncionarioNome);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 4:
-                selectionSort_decrescente_idade(ArrayFuncionario, n);
+                selectionSort(ArrayFuncionario, n, compararFuncionarioIdadeDec);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 5:
-                selectionSort_crescente_salario(ArrayFuncionario, n);
+                selectionSort(ArrayFuncionario, n, compararFuncionarioSalario);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 6:
-                selectionSort_crescente_nome(ArrayFuncionario, n);
+                selectionSort(ArrayFuncionario, n, compararFuncionarioNome);
                 printFuncionarios(ArrayFuncionario, n);
                 break;
             case 7:
