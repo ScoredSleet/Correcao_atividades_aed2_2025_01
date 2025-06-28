@@ -1,0 +1,16 @@
+Bloco de avaliação da atividade:
+
+0.5 pontos total.
+
+- Cadastro ou leitura por arquivo | 0.2
+- Ordenação:
+    a | 0.1
+    b | 0.1
+    c | 0.1
+
+Desconto na nota:
+
+- Código não modularizado | -0.2
+- Cópia de codigo         | -0.5
+- Codigo com problemas de leitura | -0.1
+- Impressão dos dados mal formatado | -0.1
