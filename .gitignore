@@ -11,4 +11,4 @@ ex02/
 *.exe
 
 # Ignore o git .gitignore
-.gitignore
+*.gitignore
