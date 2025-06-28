@@ -9,6 +9,3 @@ ex02/
 
 # Ignore os arquivos .exe
 *.exe
-
-# Ignore o git .gitignore
-*.gitignore
