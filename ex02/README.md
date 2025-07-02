@@ -16,7 +16,7 @@ entradas de dados:
 - c) Vetores de entrada com números inteiros aleatórios (5.000, 
 10.000 e 20.000)
 
-Fonte: [EX01](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex01/FACOM31303_Aula6_ExercicioOrdenacao.pdf)
+Fonte: [EX02](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex01/FACOM31303_Aula6_ExercicioOrdenacao.pdf)
 
 ## Autor
 
