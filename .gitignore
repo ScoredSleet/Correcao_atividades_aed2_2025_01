@@ -1,6 +1,5 @@
 # Ignore todas as atividades da subpasta ex02 .. ex..
 ex03/
-ex04/
 
 # Ignore todos os testes ou outputs das subpastas de exercicios
 **/testes/
