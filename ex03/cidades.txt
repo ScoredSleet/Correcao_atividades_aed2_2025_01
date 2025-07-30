@@ -1,0 +1,178 @@
+# Modo de uso: copiar e colar todo o caso de uso e apertar a tecla "Enter"
+
+# Fonte das cidades: https://www.melhoresrotas.com/tabela-de-distancias-entre-cidades/br-minas-gerais/ e https://www.melhoresrotas.com/tabela-de-distancias-entre-cidades/br-sao-paulo/ 
+
+# Cenário 1: 20 Cidades do Sudeste
+
+1 BeloHorizonte
+1 Contagem
+1 Uberlandia
+1 JuizDeFora
+1 RibeiraoDasNeves
+1 Betim
+1 MontesClaros
+1 Uberaba
+1 GovernadorValadares
+1 SantaLuzia
+1 Ipatinga
+1 SeteLagoas
+1 Divinopolis
+1 PocosDeCaldas
+1 Ibirite
+1 SaoPaulo
+1 Guarulhos
+1 Campinas
+1 SaoBernardoDoCampo
+1 Osasco
+2 BeloHorizonte Contagem 19.0
+2 BeloHorizonte Uberlandia 536.0
+2 BeloHorizonte JuizDeFora 261.0
+2 BeloHorizonte RibeiraoDasNeves 34.0
+2 BeloHorizonte Betim 30.0
+2 BeloHorizonte MontesClaros 425.0
+2 BeloHorizonte Uberaba 475.0
+2 BeloHorizonte GovernadorValadares 317.0
+2 BeloHorizonte SantaLuzia 24.0
+2 BeloHorizonte Ipatinga 218.0
+2 BeloHorizonte SeteLagoas 75.0
+2 BeloHorizonte Divinopolis 151.0
+2 BeloHorizonte PocosDeCaldas 462.0
+2 BeloHorizonte Ibirite 21.0
+2 Contagem Uberlandia 523.0
+2 Contagem JuizDeFora 270.0
+2 Contagem RibeiraoDasNeves 27.0
+2 Contagem Betim 17.0
+2 Contagem MontesClaros 418.0
+2 Contagem Uberaba 462.0
+2 Contagem GovernadorValadares 334.0
+2 Contagem SantaLuzia 41.0
+2 Contagem Ipatinga 235.0
+2 Contagem SeteLagoas 66.0
+2 Contagem Divinopolis 139.0
+2 Contagem PocosDeCaldas 449.0
+2 Contagem Ibirite 19.0
+2 Uberlandia JuizDeFora 785.0
+2 Uberlandia RibeiraoDasNeves 547.0
+2 Uberlandia Betim 506.0
+2 Uberlandia MontesClaros 627.0
+2 Uberlandia Uberaba 106.0
+2 Uberlandia GovernadorValadares 851.0
+2 Uberlandia SantaLuzia 558.0
+2 Uberlandia Ipatinga 751.0
+2 Uberlandia SeteLagoas 596.0
+2 Uberlandia Divinopolis 458.0
+2 Uberlandia PocosDeCaldas 474.0
+2 Uberlandia Ibirite 524.0
+2 JuizDeFora RibeiraoDasNeves 286.0
+2 JuizDeFora Betim 280.0
+2 JuizDeFora MontesClaros 678.0
+2 JuizDeFora Uberaba 726.0
+2 JuizDeFora GovernadorValadares 454.0
+2 JuizDeFora SantaLuzia 284.0
+2 JuizDeFora Ipatinga 426.0
+2 JuizDeFora SeteLagoas 325.0
+2 JuizDeFora Divinopolis 322.0
+2 JuizDeFora PocosDeCaldas 460.0
+2 JuizDeFora Ibirite 268.0
+2 RibeiraoDasNeves Betim 46.0
+2 RibeiraoDasNeves MontesClaros 398.0
+2 RibeiraoDasNeves Uberaba 491.0
+2 RibeiraoDasNeves GovernadorValadares 334.0
+2 RibeiraoDasNeves SantaLuzia 33.0
+2 RibeiraoDasNeves Ipatinga 235.0
+2 RibeiraoDasNeves SeteLagoas 46.0
+2 RibeiraoDasNeves Divinopolis 168.0
+2 RibeiraoDasNeves PocosDeCaldas 478.0
+2 RibeiraoDasNeves Ibirite 44.0
+2 Betim MontesClaros 433.0
+2 Betim Uberaba 445.0
+2 Betim GovernadorValadares 345.0
+2 Betim SantaLuzia 52.0
+2 Betim Ipatinga 245.0
+2 Betim SeteLagoas 80.0
+2 Betim Divinopolis 121.0
+2 Betim PocosDeCaldas 434.0
+2 Betim Ibirite 22.0
+2 MontesClaros Uberaba 648.0
+2 MontesClaros GovernadorValadares 535.0
+2 MontesClaros SantaLuzia 433.0
+2 MontesClaros Ipatinga 523.0
+2 MontesClaros SeteLagoas 360.0
+2 MontesClaros Divinopolis 554.0
+2 MontesClaros PocosDeCaldas 865.0
+2 MontesClaros Ibirite 430.0
+2 Uberaba GovernadorValadares 791.0
+2 Uberaba SantaLuzia 498.0
+2 Uberaba Ipatinga 692.0
+2 Uberaba SeteLagoas 521.0
+2 Uberaba Divinopolis 398.0
+2 Uberaba PocosDeCaldas 368.0
+2 Uberaba Ibirite 465.0
+2 GovernadorValadares SantaLuzia 313.0
+2 GovernadorValadares Ipatinga 102.0
+2 GovernadorValadares SeteLagoas 380.0
+2 GovernadorValadares Divinopolis 473.0
+2 GovernadorValadares PocosDeCaldas 783.0
+2 GovernadorValadares Ibirite 340.0
+2 SantaLuzia Ipatinga 210.0
+2 SantaLuzia SeteLagoas 70.0
+2 SantaLuzia Divinopolis 176.0
+2 SantaLuzia PocosDeCaldas 487.0
+2 SantaLuzia Ibirite 43.0
+2 Ipatinga SeteLagoas 281.0
+2 Ipatinga Divinopolis 373.0
+2 Ipatinga PocosDeCaldas 684.0
+2 Ipatinga Ibirite 240.0
+2 SeteLagoas Divinopolis 202.0
+2 SeteLagoas PocosDeCaldas 513.0
+2 SeteLagoas Ibirite 78.0
+2 Divinopolis PocosDeCaldas 390.0
+2 Divinopolis Ibirite 106.0
+2 PocosDeCaldas Ibirite 451.0
+2 SaoPaulo Guarulhos 22.0
+2 SaoPaulo Campinas 98.0
+2 SaoPaulo SaoBernardoDoCampo 20.0
+2 SaoPaulo Osasco 24.0
+2 Guarulhos Campinas 113.0
+2 Guarulhos SaoBernardoDoCampo 36.0
+2 Guarulhos Osasco 38.0
+2 Campinas SaoBernardoDoCampo 118.0
+2 Campinas Osasco 96.0
+2 SaoBernardoDoCampo Osasco 39.0
+3
+6
+
+# Cenário 2: Cidades que nao possuam ciclo
+1 SaoPaulo
+1 Guarulhos
+1 Campinas
+1 SaoBernardoDoCampo
+1 Osasco
+2 SaoPaulo Guarulhos 22.0
+2 Guarulhos Campinas 113.0
+2 Campinas SaoBernardoDoCampo 118.0
+2 SaoBernardoDoCampo Osasco 39.0
+3
+4
+6
+
+
+# Cenário 3: Cidades que possuam ciclo
+1 SaoPaulo
+1 Guarulhos
+1 Campinas
+1 SaoBernardoDoCampo
+1 Osasco
+2 SaoPaulo Guarulhos 22.0
+2 SaoPaulo Campinas 98.0
+2 SaoPaulo SaoBernardoDoCampo 20.0
+2 SaoPaulo Osasco 24.0
+2 Guarulhos Campinas 113.0
+2 Guarulhos SaoBernardoDoCampo 36.0
+2 Guarulhos Osasco 38.0
+2 Campinas SaoBernardoDoCampo 118.0
+2 Campinas Osasco 96.0
+2 SaoBernardoDoCampo Osasco 39.0
+3
+4
+6
