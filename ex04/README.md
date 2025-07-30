@@ -12,7 +12,7 @@ TAD.
 Para  cada  CEP  encontrado,  deve-se  exibir  na tela  a respectiva  entrada  completa:  CEP, 
 sigla do estado, nome da cidade e endereço.
 
-Fonte: [EX04](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex04/FACOM31303_Aula15_PraticaBuscaBinariaVetor)
+Fonte: [EX04](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex04/FACOM31303_Aula15_PraticaBuscaBinariaVetor.pdf)
 
 ## Autor
 

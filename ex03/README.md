@@ -17,7 +17,7 @@ do conjunto de dados
 Se tiver função de verificação de ciclos ganha 1 ponto extra
 
 
-Fonte: [EX03](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex03/FACOM31303_Aula12_PraticaGrafos)
+Fonte: [EX03](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex03/FACOM31303_Aula12_PraticaGrafos.pdf)
 
 ## Autor
 
