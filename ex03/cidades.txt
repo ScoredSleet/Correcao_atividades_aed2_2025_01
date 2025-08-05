@@ -140,7 +140,7 @@
 2 Campinas Osasco 96.0
 2 SaoBernardoDoCampo Osasco 39.0
 3
-6
+5
 
 # Cenário 2: Cidades que nao possuam ciclo
 1 SaoPaulo
@@ -154,7 +154,7 @@
 2 SaoBernardoDoCampo Osasco 39.0
 3
 4
-6
+5
 
 
 # Cenário 3: Cidades que possuam ciclo
@@ -175,4 +175,4 @@
 2 SaoBernardoDoCampo Osasco 39.0
 3
 4
-6
+5
