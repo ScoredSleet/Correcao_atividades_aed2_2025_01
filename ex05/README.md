@@ -12,7 +12,7 @@ O exercício prático consiste na implementação de um programa em linguagem C 
 
 Para as funções de pesquisa, menor e maior, o programa deve retornar o endereço do registro que contém a chave, ou nulo caso contrário.
 
-Fonte: [EX05](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex04/FACOM31303_ex05.pdf)
+Fonte: [EX05](https://github.com/ScoredSleet/Correcao_atividades_aed2_2025_01/blob/main/ex06/FACOM31303_ex05.pdf)
 
 ## Autor
 
